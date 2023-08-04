@@ -1,2 +1,22 @@
-<h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<div class="container my-3">
+    <h1>{{title}}</h1>
+    <nav class="mx-2">
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/heroes" class="mx-3">Heroes</a>
+    </nav>
+    <div class="row">
+        <div class="col-7 my-5">
+            <router-outlet></router-outlet>
+        </div>
+        <div class="col-4 bg-body-secondary p-3">
+            <app-messages></app-messages>
+        </div>
+    </div>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
